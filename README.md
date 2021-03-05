@@ -10,7 +10,7 @@ Aim of this demo project is to provide an glimpse of different scenarios using  
 
 ## Data source for the project
 
-The project references IMDB Movie/TV datasets. You can get a subset of the IMDB data from datasets.imdbws.com. These files are refreshed daily, and you can find the descriptions and details on imdb.com/interfaces. Make sure you read the terms and conditions for usage.
+The project references IMDB Movie/TV datasets. You can get a subset of the IMDB data from [datasets.imdbws.com](datasets.imdbws.com). These files are refreshed daily, and you can find the descriptions and details on [imdb.com/interfaces](imdb.com/interfaces). Make sure you read the terms and conditions for usage.
 
 ## Prerequisites
 
