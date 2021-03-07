@@ -17,12 +17,17 @@ The project references IMDB Movie/TV datasets. You can get a subset of the IMDB 
 *   Azure subscription. If you don't have an Azure subscription, create a [free Azure account](https://azure.microsoft.com/en-us/free/) before you begin.
 
 ## Project will show you how to:
-* ingest data from HTTP service into Azure Blob Storage (ABS) with parametrized pipelines using Azure Data Factory (ADF)
-* copy data from Azure Blob Storage (ABS) to Azure Data Lake Storage (ADLS)
-* copy data from Azure Data Lake Storage (ADLS) to Azure SQL Database
-* create Databricks Notebooks for data transformation
-* transform data using Databricks Notebook Activity in Azure Data Factory (ADF) and load into Azure Data Lake Storage (ADLS) and Azure SQL Database
-* transform data using Data Flows in Azure Data Factory (ADF) and load from Azure SQL Database into CosmosDb
+* [Set-up environment]() 
+* [ingest data from HTTP service into Azure Blob Storage (ABS) with parametrized pipelines using Azure Data Factory (ADF)]()
+* [copy data from Azure Blob Storage (ABS) to Azure Data Lake Storage (ADLS)]()
+* [copy data from Azure Data Lake Storage (ADLS) to Azure SQL Database]()
+* [create Databricks Notebooks for data transformation]()
+* [transform data using Databricks Notebook Activity in Azure Data Factory (ADF) and load into Azure Data Lake Storage (ADLS) and Azure SQL Database]()
+* [transform data using Data Flows in Azure Data Factory (ADF) and load from Azure SQL Database into CosmosDb]()
+* [use Azure Function and C# for fetching and loading data into Azure Storage Acocunt from Azure SQL Database]()
+
+## Project Architecture
+
 
 
 
