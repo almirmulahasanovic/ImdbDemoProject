@@ -1,33 +1,21 @@
 # SetUp Environment
 
-## Project overview
+## General overview
 
-In the world of big data, raw, unorganized data is often stored in relational, non-relational, and other storage systems. All those data need a services that can orchestrate and operationalize processes to refine these enormous stores of data into actionable business insights.
+Folowing to project architecture there are several resources we need to create in order to build project. 
 
-The first step in building an information production system is to connect to all the required sources of data and processing, such as software-as-a-service (SaaS) services, databases, file shares, and FTP web services. The next step is to move the data as needed to a centralized location for subsequent processing.
+The first pre-requisit is to have an Azure subscription. If you don't have an Azure subscription, create a [free Azure account](https://azure.microsoft.com/en-us/free/) before you continiue.
 
-Aim of this demo project is to provide an glimpse of different scenarios using  Azure Data Factory and Azure Databricks to Ingest, Prepare, Transform and Serve (IPTS) data. 
+After you open Azure Portal under your account the following resourcese need to be created:
+1. Azure Storage Account
+2. Data Lake Storage Account Gen 2 (ADLS Gen 2)
+3. Azure Data Factory
+4. Azure SQL Database
+5. Azure Cosmos DB
+6. Azure Databricks Cluster
+7. Azure Function App (Azure Function)
+8. Azure Key Vault
 
-## Data source for the project
 
-The project references IMDB Movie/TV datasets. You can get a subset of the IMDB data from [datasets.imdbws.com](datasets.imdbws.com). These files are refreshed daily, and you can find the descriptions and details on [imdb.com/interfaces](imdb.com/interfaces). Make sure you read the terms and conditions for usage.
-
-## Prerequisites
-
-*   Azure subscription. If you don't have an Azure subscription, create a [free Azure account](https://azure.microsoft.com/en-us/free/) before you begin.
-
-## Project will show you how to:
-1. [Set-up environment]() 
-2. [Ingest data from HTTP service into Azure Blob Storage (ABS) with parametrized pipelines using Azure Data Factory (ADF)]()
-3. [Copy data from Azure Blob Storage (ABS) to Azure Data Lake Storage (ADLS)]()
-4. [Copy data from Azure Data Lake Storage (ADLS) to Azure SQL Database]()
-5. [Create Databricks Notebooks for data transformation]()
-6. [Transform data using Databricks Notebook Activity in Azure Data Factory (ADF) and load into Azure Data Lake Storage (ADLS) and Azure SQL Database]()
-7. [Transform data using Data Flows in Azure Data Factory (ADF) and load from Azure SQL Database into CosmosDb]()
-8. [Use Azure Function and C# for fetching and loading data into Azure Storage Acocunt from Azure SQL Database]()
-
-## Project Architecture
-
-![Project Architecture overview](img/Software%20Architecture.png "Project Architecture") 
 
 
