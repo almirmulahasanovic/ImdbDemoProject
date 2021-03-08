@@ -1,4 +1,4 @@
-# ImdbDemoProject
+# SetUp Environment
 
 ## Project overview
 
