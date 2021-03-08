@@ -17,7 +17,7 @@ The project references IMDB Movie/TV datasets. You can get a subset of the IMDB 
 *   Azure subscription. If you don't have an Azure subscription, create a [free Azure account](https://azure.microsoft.com/en-us/free/) before you begin.
 
 ## Project will show you how to:
-1. [Set-up environment](screens/setUp.md) 
+1. [Set-up environment]() 
 2. [Ingest data from HTTP service into Azure Blob Storage (ABS) with parametrized pipelines using Azure Data Factory (ADF)]()
 3. [Copy data from Azure Blob Storage (ABS) to Azure Data Lake Storage (ADLS)]()
 4. [Copy data from Azure Data Lake Storage (ADLS) to Azure SQL Database]()
@@ -27,8 +27,6 @@ The project references IMDB Movie/TV datasets. You can get a subset of the IMDB 
 8. [Use Azure Function and C# for fetching and loading data into Azure Storage Acocunt from Azure SQL Database]()
 
 ## Project Architecture
-
-
 
 ![Project Architecture overview](img/Software%20Architecture.png "Project Architecture") 
 
