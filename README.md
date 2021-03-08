@@ -28,6 +28,6 @@ The project references IMDB Movie/TV datasets. You can get a subset of the IMDB 
 
 ## Project Architecture
 
-![image info](img/SoftwareArchitecture.png)
+![image info](img/Software Architecture.png)
 
 
