@@ -2,7 +2,7 @@
 
 ## General overview
 
-Folowing to project architecture there are several resources we need to create in order to build project.
+Following to project architecture there are several resources we need to create in order to build project.
 
 The first pre-requisit is to have an Azure subscription. If you don't have an Azure subscription, create a [free Azure account](https://azure.microsoft.com/en-us/free/) before you continiue.
 
