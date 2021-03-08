@@ -2,7 +2,7 @@
 
 ## General overview
 
-Folowing to project architecture there are several resources we need to create in order to build project. 
+Folowing to project architecture there are several resources we need to create in order to build project.
 
 The first pre-requisit is to have an Azure subscription. If you don't have an Azure subscription, create a [free Azure account](https://azure.microsoft.com/en-us/free/) before you continiue.
 
@@ -16,7 +16,10 @@ After you open Azure Portal under your account the following resourcese need to 
 7. Azure Function App (Azure Function) ([see details](#Function))
 8. Azure Key Vault ([see details](#KeyVault))
 
-**Notice:** *Assuming you are allready familiar with all those services no detailed explanation will be provided about each option avaliable within service we provision. For more details please visit Microsoft Docs pages.*
+### Final overview of project services
+![Project Architecture overview](images/Services.png "Project Architecture") 
+
+**Notice:** *Assuming you are allready familiar with all those services no detailed explanation will be provided about each option avaliable within service. For more details please visit Microsoft Docs pages.*
 
 <a name="sac"></a>
 ## Storage Account
