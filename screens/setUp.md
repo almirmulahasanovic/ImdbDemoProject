@@ -7,7 +7,7 @@ Folowing to project architecture there are several resources we need to create i
 The first pre-requisit is to have an Azure subscription. If you don't have an Azure subscription, create a [free Azure account](https://azure.microsoft.com/en-us/free/) before you continiue.
 
 After you open Azure Portal under your account the following resourcese need to be created:
-1. Azure Storage Account ([see details](#sac))
+1. Azure Storage Account ([sac](#sac))
 2. Data Lake Storage Account Gen 2 (ADLS) ([see details](#ADLS))
 3. Azure Data Factory ([see details](#ADF))
 4. Azure SQL Database ([see details](#SQL))
