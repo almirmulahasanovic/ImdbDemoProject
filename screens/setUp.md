@@ -33,10 +33,10 @@ After you open Azure Portal under your account the following resourcese need to 
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*For subscription select your subscription* \
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*For **Resource Group** and **Storage name** - keep the same names as on screen* \
 ![storage account](images/SA1.png)
-5. For **Networking,Data Protection,Advanced and Tags** tabs please kep default values
+5. For **Networking,Data Protection,Advanced and Tags** tabs keep default values
 6. On **Review + create** tab review all set parameters and click on **Create** in bottom left corner and wait for resource to be deloyed 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Note:** *Before click on **Create** be sure that **Validation** status is passed* 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Note:** *Before click on **Create** be sure that **Validation** status is **passed*** 
 
 ![storage account](images/SA3.png)
 
