@@ -16,7 +16,7 @@ After you open Azure Portal under your account the following resourcese need to 
 7. Azure Function App (Azure Function) ([see Azure Function App details](#Function))
 8. Azure Key Vault ([see Key Vault details](#KeyVault))
 
-<a name="see Storage Account details"></a>
+<a name="sac"></a>
 ## Storage Account
 
 <a name="see ADLS details"></a>
