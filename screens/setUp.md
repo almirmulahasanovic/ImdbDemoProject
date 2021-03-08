@@ -27,18 +27,18 @@ After you open Azure Portal under your account the following resourcese need to 
 1.  Click on **+ Create Resource** option on Azure Home Page 
 2.  Type **Storage Account** in Search Box
 3.  Click on **Create**
-![](images/sa.png)
+![storage account](images/SA.png)
 4.  On the **Create storage account** page set parameters as shown on screen: \
 **Note:** *Location best practice is to set nearest to your location* \
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*For subscription select your subscription* \
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*For **Resource Group** and **Storage name** - keep the same names as on screen* \
-![](images/sa1.png)
+![storage account](images/SA1.png)
 5. For **Networking,Data Protection,Advanced and Tags** tabs please kep default values
 6. On **Review + create** tab review all set parameters and click on **Create** in bottom left corner and wait for resource to be deloyed 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Note:** *Before click on **Create** be sure that **Validation** status is passed* 
 
-![](images/sa3.png)
+![storage account](images/SA3.png)
 
 
 <a name="ADLS"></a>
