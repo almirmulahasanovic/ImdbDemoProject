@@ -7,37 +7,37 @@ Folowing to project architecture there are several resources we need to create i
 The first pre-requisit is to have an Azure subscription. If you don't have an Azure subscription, create a [free Azure account](https://azure.microsoft.com/en-us/free/) before you continiue.
 
 After you open Azure Portal under your account the following resourcese need to be created:
-1. Azure Storage Account ([see Storage Account details](#sac))
-2. Data Lake Storage Account Gen 2 (ADLS) ([see ADLS details](#ADLS))
-3. Azure Data Factory ([see ADF details](#ADF))
-4. Azure SQL Database ([see Azure SQL Database details](#SQL))
-5. Azure Cosmos DB ([see Azure Cosmos DB details](#Cosmos))
-6. Azure Databricks Cluster ([see Databricks Cluster details](#Databricks))
-7. Azure Function App (Azure Function) ([see Azure Function App details](#Function))
-8. Azure Key Vault ([see Key Vault details](#KeyVault))
+1. Azure Storage Account ([see details](#sac))
+2. Data Lake Storage Account Gen 2 (ADLS) ([see details](#ADLS))
+3. Azure Data Factory ([see details](#ADF))
+4. Azure SQL Database ([see details](#SQL))
+5. Azure Cosmos DB ([see details](#Cosmos))
+6. Azure Databricks Cluster ([see details](#Databricks))
+7. Azure Function App (Azure Function) ([see details](#Function))
+8. Azure Key Vault ([see details](#KeyVault))
 
 <a name="sac"></a>
 ## Storage Account
 
-<a name="see ADLS details"></a>
+<a name="ADLS"></a>
 ## Data Lake Storage Account
 
-<a name="see ADF details"></a>
+<a name="ADF"></a>
 ## Azure Data Factory
 
-<a name="see Azure SQL Database details"></a>
+<a name="SQL"></a>
 ## Azure SQL Database
 
-<a name="see Azure Cosmos DB details"></a>
+<a name="Cosmos"></a>
 ## Cosmos DB
 
-<a name="see Databricks Cluster details"></a>
+<a name="Databricks"></a>
 ## Azure Databricks Cluster
 
-<a name="see Azure Function App details"></a>
+<a name="Function"></a>
 ## Azure Function App
 
-<a name="see Key Vault details"></a>
+<a name="KeyVault"></a>
 ## Azure KeyVault
 
 
