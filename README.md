@@ -34,9 +34,9 @@ The project references IMDB Movie/TV datasets. You can get a subset of the IMDB 
 
 ![Project Architecture overview](img/Software%20Architecture.png "Project Architecture") 
 
-## See my other projects
-1.  [**FIDAR** - (**FI**nancial **D**ata, **A**nalysis and **R**eporting)](screens/setUp.md) 
- is profitability calculator. It's developed following banking financial standards for calculating profitability on different levels (segments, products, customers, branches). Implements Fund Transfer Pricing for calculating internal pricing and net interest margin on single deal, product and segment level [(see more details)](screens/setUp.md)
+## My other projects
+1.  [**FIDAR** - ](screens/setUp.md) 
+ (**FI**nancial **D**ata, **A**nalysis and **R**eporting) is profitability calculator. It's developed following banking financial standards for calculating profitability on different levels (segments, products, customers, branches). Implements Fund Transfer Pricing for calculating internal pricing and net interest margin on single deal, product and segment level [(see more details)](screens/setUp.md)
 
 
 
