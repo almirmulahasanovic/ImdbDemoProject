@@ -56,14 +56,21 @@ After Data Lake Storage Account is provisioned, the next we need to do is to cre
 
 ![storage account](images/ADLS2.png)
 
-### Important recomendation for both Storage Account and Azure Data Lake Storage
-Until now we used Azure portal to create conatiners. It's recomended to use Azure Storage Explorer - an application which helps you to easily access the Azure storage account through any device on any platform, be it Windows, MacOS, or Linux. You can easily connect to your subscription and manipulate your tables, blobs, queues, and files. 
+
+>### Important recomendation for both Storage Account and Azure Data Lake Storage
+>Until now we used Azure portal to create conatiners. It's recomended to use Azure Storage Explorer - an application which helps you to easily access the Azure storage account through any device on any platform, be it Windows, MacOS, or Linux. You can easily connect to your subscription and manipulate your tables, blobs, queues, and files. 
+
+
+<a name="SQL"></a>
+## Azure SQL Database
+
+
+<a name="KeyVault"></a>
+## Azure KeyVault
 
 <a name="ADF"></a>
 ## Azure Data Factory
 
-<a name="SQL"></a>
-## Azure SQL Database
 
 <a name="Cosmos"></a>
 ## Cosmos DB
@@ -74,8 +81,6 @@ Until now we used Azure portal to create conatiners. It's recomended to use Azur
 <a name="Function"></a>
 ## Azure Function App
 
-<a name="KeyVault"></a>
-## Azure KeyVault
 
 
 

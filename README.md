@@ -1,4 +1,4 @@
-# ImdbDemoProject
+# IMDB Demo Project
 
 ## Project overview
 
