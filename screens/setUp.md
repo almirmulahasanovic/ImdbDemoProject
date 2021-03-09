@@ -19,62 +19,36 @@ After you open Azure Portal under your account the following resourcese need to 
 ### Final overview of project services
 ![Project Architecture overview](images/Services.png "Project Architecture") 
 
-`>**Notice:** *Assuming you already have solid knowledge and understanding how to provision those services no detailed instructions and screen shoots will be provided on each step of creation. In case of need for more details about any of services and their provision please visit Microsoft Docs pages.*`
+>**Notice:** *Assuming you already have solid knowledge and understanding how to provision those services no detailed instructions and screen shoots will be provided on each step of creation. For more details if needed please visit Microsoft Docs pages.*
 
 <a name="sac"></a>
 ## Storage Account
 
-For provision of Storage Account Azure Portal is used. The process is straight forward, and as 
+For details on how to create Azure Storage Account please visit [this web page](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal). 
 
-1.  Click on **+ Create Resource** option on **Azure Home Page**
-2.  Type **Storage Account** in Search Box
-3.  Click on **Create** (see image below)
-![storage account](images/SA.png)
-4.  On the **Create storage account** page set parameters as shown on screen: \
-**Note:** *Location best practice is to set nearest to your location* \
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*For subscription select your subscription* \
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*For **Resource Group** and **Storage name** - keep the same names as on screen for project purpose*
-          
-![storage account](images/SA1.png)
-5. For **Networking,Data Protection,Advanced and Tags** tabs keep default values
-6. On **Review + create** tab review all set parameters and click on **Create** in bottom left corner and wait for resource to be deloyed 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Note:** *Before click on **Create** be sure that **Validation** status is **passed*** 
-
-![storage account](images/SA3.png)
-
-7. After Storage Account is created we need to create 3 containers inside the storage account which will be used for different purposes in project. Please see image \
+**Important**: After Azure Storage Account is porvisioned, 3 containers must be created as shown on following image. All conatiners are type of Blob Storage and will be used as one of storage solution for the project.
 
 ![storage account](images/SA4.png)
 
 
 <a name="ADLS"></a>
 ## Data Lake Storage Account
-There is only one big difference in creating Azure Data Lake Storage comparing to creating Azure Storage Account. The same is referring to setup of Hierarchical Namespace to **Enabled** (*default is Disabled*) under **Advanced** tab (*please see image below*). All other options remain the same as for Azure Storage Account we created in previous section ([see Azure Account section for details](#sac)) \
-\
+**Notice** : For details on how to create Data Lake Gen 2 Storage please visit [this web page](https://docs.microsoft.com/en-us/azure/storage/blobs/create-data-lake-storage-account).\
+*The only difference comparing to Azure Storage Account is in enabling Hierarchy Namespace.*
+
 ![storage account](images/ADLS1.png)
 
-After Data Lake Storage Account is provisioned, the next we need to do is to create 3 containers type of Blob (*please see image below*)
+**Important**: Inside ADLS 3 containers must be created as shown on image. All conatiners are type of Blob Storage and will be used as one of storage solution for the project.
 
-![storage account](images/ADLS2.png)
-
+![storage account](images/ADLS4.png)
 
 >### Important recomendation for both Storage Account and Azure Data Lake Storage
->Until now we used Azure portal to create conatiners. It's recomended to use **Azure Storage Explorer** - an application which helps you to easily access the Azure storage account through any device on any platform, be it Windows, MacOS, or Linux. You can easily connect to your subscription and manipulate your tables, blobs, queues, and files. 
-
-After containers are created , using **Azure Storage Explorer** we should see structure as follows:
-
-![storage account](images/ADLS3.png)
-
->Note: For any further activities in project on Azure Blob Storage or ADLS  Azure Storage Explorer will be used
+>It's recomended to use **Azure Storage Explorer** - an application which helps you to easily access the Azure storage account through any device on any platform, be it Windows, MacOS, or Linux. You can easily connect to your subscription and manipulate your tables, blobs, queues, and files. 
 
 <a name="SQL"></a>
 ## Azure SQL Database
 
-To provision Azure SQL Database follow these steps:
-1.  Click **+ Create a Resource** on Main Azure Portal page
-2.  Type **SQL Database** in search box
-3.  Click on **Create** after main input form is visible for seting SQL database parameters
+After Azure SQL Server is provisioned (for details on how to provision visit [this web page](https://docs.microsoft.com/en-us/learn/modules/provision-azure-sql-db/)), the most important thing is to set firewall rules to allow access to database for other Azure Services and IP addresses. For more details on how to set firewall rules please visit [this web page](https://docs.microsoft.com/en-us/azure/azure-sql/database/secure-database-tutorial).
 
 ![storage account](images/Sql1.png)
 
