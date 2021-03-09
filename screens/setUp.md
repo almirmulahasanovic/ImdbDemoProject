@@ -33,33 +33,25 @@ For details on how to create Azure Storage Account please visit [this web page](
 
 <a name="ADLS"></a>
 ## Data Lake Storage Account
+
 **Notice** : For details on how to create Data Lake Gen 2 Storage please visit [this web page](https://docs.microsoft.com/en-us/azure/storage/blobs/create-data-lake-storage-account).\
 *The only difference comparing to Azure Storage Account is in enabling Hierarchy Namespace.*
 
 ![storage account](images/ADLS1.png)
 
-**Important**: Inside ADLS 3 containers must be created as shown on image. All conatiners are type of Blob Storage and will be used as one of storage solution for the project.
+**Important**: Inside ADLS 3 (three) containers must be created as shown on image. All conatiners are type of Blob Storage and will be used as one of storage solution for the project.
 
 ![storage account](images/ADLS4.png)
 
 >### Important recomendation for both Storage Account and Azure Data Lake Storage
->It's recomended to use **Azure Storage Explorer** - an application which helps you to easily access the Azure storage account through any device on any platform, be it Windows, MacOS, or Linux. You can easily connect to your subscription and manipulate your tables, blobs, queues, and files. 
+>*It's recomended to use **Azure Storage Explorer** - an application which helps you to easily access the Azure storage account through any device on any platform, be it Windows, MacOS, or Linux. You can easily connect to your subscription and manipulate your tables, blobs, queues, and files.*
 
 <a name="SQL"></a>
 ## Azure SQL Database
 
-After Azure SQL Server is provisioned (for details on how to provision visit [this web page](https://docs.microsoft.com/en-us/learn/modules/provision-azure-sql-db/)), the most important thing is to set firewall rules to allow access to database for other Azure Services and IP addresses. For more details on how to set firewall rules please visit [this web page](https://docs.microsoft.com/en-us/azure/azure-sql/database/secure-database-tutorial).
+After Azure SQL Server is provisioned (for details on how to provision visit [this web page](https://docs.microsoft.com/en-us/learn/modules/provision-azure-sql-db/)), the most important thing is to set firewall rules to allow access to database for other Azure Services and IP addresses/ranges/subnets. For more details on how to set firewall rules please visit [this web page](https://docs.microsoft.com/en-us/azure/azure-sql/database/secure-database-tutorial).
 
-![storage account](images/Sql1.png)
-
-4. Set following parameters and click on **Review + Create**
-![storage account](images/Sql2.png)
-
-5. Finally, you need to set **Firewall Rules" so you allow other services to access database. After Firewall rules are set test it by trying to connect using Microsoft SQL Management Studio
-![storage account](images/sql3.png)
-![storage account](images/sql4.png)
-
-6. In order to prepare database for the project run the following [script](/SQL%20Server%20Scripts/IMDBDatabaseScript.sql)
+In order to prepare database for the project run the following [script](/SQL%20Server%20Scripts/IMDBDatabaseScript.sql)
 
 
 <a name="KeyVault"></a>
