@@ -31,7 +31,8 @@ After you open Azure Portal under your account the following resourcese need to 
 4.  On the **Create storage account** page set parameters as shown on screen: \
 **Note:** *Location best practice is to set nearest to your location* \
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*For subscription select your subscription* \
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*For **Resource Group** and **Storage name** - keep the same names as on screen for project purpose* \
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*For **Resource Group** and **Storage name** - keep the same names as on screen for project purpose*
+          
 ![storage account](images/SA1.png)
 5. For **Networking,Data Protection,Advanced and Tags** tabs keep default values
 6. On **Review + create** tab review all set parameters and click on **Create** in bottom left corner and wait for resource to be deloyed 
@@ -40,14 +41,23 @@ After you open Azure Portal under your account the following resourcese need to 
 
 ![storage account](images/SA3.png)
 
-7. After Storage Account is created we need to create 3 containers inside the storage account which will be used for different purposes in project. Please see image
+7. After Storage Account is created we need to create 3 containers inside the storage account which will be used for different purposes in project. Please see image \
+
 ![storage account](images/SA4.png)
 
 
 <a name="ADLS"></a>
 ## Data Lake Storage Account
-There is only one big difference in creating Azure Data Lake Storage comparing to creating Azure Storage Account. The same is referring to setup of Hierarchical Namespace to **Enabled** (*default is Disabled*) under **Advanced** tab. All other options remain the same as for Azure Storage Account we created in previous section ([see Azure Account section for details](#sac))
+There is only one big difference in creating Azure Data Lake Storage comparing to creating Azure Storage Account. The same is referring to setup of Hierarchical Namespace to **Enabled** (*default is Disabled*) under **Advanced** tab (*please see image below*). All other options remain the same as for Azure Storage Account we created in previous section ([see Azure Account section for details](#sac)) \
+\
 ![storage account](images/ADLS1.png)
+
+After Data Lake Storage Account is provisioned, the next we need to do is to create 3 containers type of Blob (*please see image below*)
+
+![storage account](images/ADLS2.png)
+
+### Important recomendation for both Storage Account and Azure Data Lake Storage
+Until now we used Azure portal to create conatiners. It's recomended to use Azure Storage Explorer - an application which helps you to easily access the Azure storage account through any device on any platform, be it Windows, MacOS, or Linux. You can easily connect to your subscription and manipulate your tables, blobs, queues, and files. 
 
 <a name="ADF"></a>
 ## Azure Data Factory
