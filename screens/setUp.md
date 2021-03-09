@@ -19,7 +19,7 @@ After you open Azure Portal under your account the following resourcese need to 
 ### Final overview of project services
 ![Project Architecture overview](images/Services.png "Project Architecture") 
 
-**Notice:** *Assuming you are allready familiar with all those services no detailed explanation will be provided about each option avaliable within service. For more details please visit Microsoft Docs pages.*
+**Notice:** *Assuming you are already familiar with all those services no detailed explanation will be provided about each option avaliable within service. For more details please visit Microsoft Docs pages.*
 
 <a name="sac"></a>
 ## Storage Account
@@ -31,7 +31,7 @@ After you open Azure Portal under your account the following resourcese need to 
 4.  On the **Create storage account** page set parameters as shown on screen: \
 **Note:** *Location best practice is to set nearest to your location* \
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*For subscription select your subscription* \
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*For **Resource Group** and **Storage name** - keep the same names as on screen* \
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*For **Resource Group** and **Storage name** - keep the same names as on screen for project purpose* \
 ![storage account](images/SA1.png)
 5. For **Networking,Data Protection,Advanced and Tags** tabs keep default values
 6. On **Review + create** tab review all set parameters and click on **Create** in bottom left corner and wait for resource to be deloyed 
