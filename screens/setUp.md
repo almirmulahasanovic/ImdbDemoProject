@@ -19,10 +19,12 @@ After you open Azure Portal under your account the following resourcese need to 
 ### Final overview of project services
 ![Project Architecture overview](images/Services.png "Project Architecture") 
 
-**Notice:** *Assuming you are already familiar with all those services no detailed explanation will be provided about each option avaliable within service. For more details please visit Microsoft Docs pages.*
+`>**Notice:** *Assuming you already have solid knowledge and understanding how to provision those services no detailed instructions and screen shoots will be provided on each step of creation. In case of need for more details about any of services and their provision please visit Microsoft Docs pages.*`
 
 <a name="sac"></a>
 ## Storage Account
+
+For provision of Storage Account Azure Portal is used. The process is straight forward, and as 
 
 1.  Click on **+ Create Resource** option on **Azure Home Page**
 2.  Type **Storage Account** in Search Box
