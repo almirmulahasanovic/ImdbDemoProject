@@ -1,4 +1,4 @@
-# SetUp Environment
+# Set Up Environment
 
 ## General overview
 
@@ -58,11 +58,32 @@ After Data Lake Storage Account is provisioned, the next we need to do is to cre
 
 
 >### Important recomendation for both Storage Account and Azure Data Lake Storage
->Until now we used Azure portal to create conatiners. It's recomended to use Azure Storage Explorer - an application which helps you to easily access the Azure storage account through any device on any platform, be it Windows, MacOS, or Linux. You can easily connect to your subscription and manipulate your tables, blobs, queues, and files. 
+>Until now we used Azure portal to create conatiners. It's recomended to use **Azure Storage Explorer** - an application which helps you to easily access the Azure storage account through any device on any platform, be it Windows, MacOS, or Linux. You can easily connect to your subscription and manipulate your tables, blobs, queues, and files. 
 
+After containers are created , using **Azure Storage Explorer** we should see structure as follows:
+
+![storage account](images/ADLS3.png)
+
+>Note: For any further activities in project on Azure Blob Storage or ADLS  Azure Storage Explorer will be used
 
 <a name="SQL"></a>
 ## Azure SQL Database
+
+To provision Azure SQL Database follow these steps:
+1.  Click **+ Create a Resource** on Main Azure Portal page
+2.  Type **SQL Database** in search box
+3.  Click on **Create** after main input form is visible for seting SQL database parameters
+
+![storage account](images/SQL1.png)
+
+4. Set following parameters and click on **Review + Create** 
+![storage account](images/SQL2.png)
+
+5. Finally, you need to set **Firewall Rules" so you allow other services to access database. After Firewall rules are set test it by trying to connect using Microsoft SQL Management Studio
+![storage account](images/SQL3.png)
+![storage account](images/SQL4.png)
+
+6. In order to prepare database for the project run the following [script]()
 
 
 <a name="KeyVault"></a>
