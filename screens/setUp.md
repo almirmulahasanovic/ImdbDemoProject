@@ -74,14 +74,14 @@ To provision Azure SQL Database follow these steps:
 2.  Type **SQL Database** in search box
 3.  Click on **Create** after main input form is visible for seting SQL database parameters
 
-![storage account](images/SQL1.png)
+![storage account](images/sql1.png)
 
 4. Set following parameters and click on **Review + Create** 
-![storage account](images/SQL2.png)
+![storage account](images/sql2.png)
 
 5. Finally, you need to set **Firewall Rules" so you allow other services to access database. After Firewall rules are set test it by trying to connect using Microsoft SQL Management Studio
-![storage account](images/SQL3.png)
-![storage account](images/SQL4.png)
+![storage account](images/sql3.png)
+![storage account](images/sql4.png)
 
 6. In order to prepare database for the project run the following [script]()
 
