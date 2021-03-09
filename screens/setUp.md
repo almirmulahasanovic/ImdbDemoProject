@@ -83,7 +83,7 @@ To provision Azure SQL Database follow these steps:
 ![storage account](images/sql3.png)
 ![storage account](images/sql4.png)
 
-6. In order to prepare database for the project run the following [script](SQL%20Server%20Scripts/IMDBDatabaseScript.sql)
+6. In order to prepare database for the project run the following [script](/SQL%20Server%20Scripts/IMDBDatabaseScript.sql)
 
 
 <a name="KeyVault"></a>
