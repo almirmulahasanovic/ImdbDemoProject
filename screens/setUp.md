@@ -24,9 +24,9 @@ After you open Azure Portal under your account the following resourcese need to 
 <a name="sac"></a>
 ## Storage Account
 
-1.  Click on **+ Create Resource** option on Azure Home Page 
+1.  Click on **+ Create Resource** option on **Azure Home Page**
 2.  Type **Storage Account** in Search Box
-3.  Click on **Create**
+3.  Click on **Create** (see image below)
 ![storage account](images/SA.png)
 4.  On the **Create storage account** page set parameters as shown on screen: \
 **Note:** *Location best practice is to set nearest to your location* \
@@ -40,9 +40,14 @@ After you open Azure Portal under your account the following resourcese need to 
 
 ![storage account](images/SA3.png)
 
+7. After Storage Account is created we need to create 3 containers inside the storage account which will be used for different purposes in project. Please see image
+![storage account](images/SA4.png)
+
 
 <a name="ADLS"></a>
 ## Data Lake Storage Account
+There is only one big difference in creating Azure Data Lake Storage comparing to creating Azure Storage Account. The same is referring to setup of Hierarchical Namespace to **Enabled** (*default is Disabled*) under **Advanced** tab. All other options remain the same as for Azure Storage Account we created in previous section ([see Azure Account section for details](#sac))
+![storage account](images/ADLS1.png)
 
 <a name="ADF"></a>
 ## Azure Data Factory
