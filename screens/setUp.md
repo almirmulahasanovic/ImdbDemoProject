@@ -88,15 +88,31 @@ To access resources secured by an Azure AD tenant, a security principal must rep
 
 On how to provision Azure Data Factory please visit [this web page](https://docs.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory-portal).
 
+The important thing in seting up of ADF is to provide access to Key Vault so the service can use stored secrets in safe manner and in acordance to best practice to access other services in first place storage solutions (storage account, ADLS and Sql Server database). To enable access for ADF to other services using Key Vault secrets  **Access Policy** have to be used. **Access policy** is option within Azure Key Vult. So the steps are as follows:
+1. Navigate to **Access policy** tab on left sidebar of Key Vault
+2. Click on **+ Add Access Policy**
+3. Fill the **Add Access Policy** required parameters and click on **Add**
+![storage account](images/adf1.png)
+4. After click on **Add** principal shoud apear on principal list 
+![storage account](images/adf2.png)
 
-<a name="Cosmos"></a>
-## Cosmos DB
+*This will allow Azure Data Factory to access other services which have stored access credentials to service using Key Vault secrets. This is recomended aproach since there is no distribution of real credentials just pointers to the same for which service have to have allowed access.*
+
 
 <a name="Databricks"></a>
 ## Azure Databricks Cluster
+ 
+ Azure Databricks is fast, easy, and collaborative Apache Spark based analytics service. It's used to transform data from ADLS and load into Azure Sql Database and ADLS in parquet format.
+
+ Process of provisioning Azure Databricks using Azure Portal is straight forward process. We are not going into step by step explanation - for more details please visit [this web site](https://www.mssqltips.com/sqlservertip/6472/getting-started-with-azure-databricks/).
+
+ The most important part of Databrick workspace is to enable to mount ADLS. The step by step is described in section where transfromation using spark is expleined. There you will see how to create an Azure Key Vault-backed Secret Scope in Azure Databricks and allow access to ADLS.
 
 <a name="Function"></a>
 ## Azure Function App
+
+<a name="Cosmos"></a>
+## Cosmos DB
 
 
 
