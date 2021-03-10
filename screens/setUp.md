@@ -111,6 +111,10 @@ The important thing in seting up of ADF is to provide access to Key Vault so the
 <a name="Function"></a>
 ## Azure Function App
 
+In order to create Azure Function first we need to create Azure Function App. Inside the same Function will be defined using C#. On how to create Azure Function App please wisit [this web site]().
+
+The most important aspect of function is to allow the access to Key vault so that function can connect to different store services. This will be managed by Configuration and Identity options in Azure Function App. Implementation is described in section "Use Azure Function and C# for fetching and loading data into Azure Storage Acocunt from Azure SQL Database"
+
 <a name="Cosmos"></a>
 ## Cosmos DB
 
