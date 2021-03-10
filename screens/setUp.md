@@ -86,6 +86,9 @@ To access resources secured by an Azure AD tenant, a security principal must rep
 <a name="ADF"></a>
 ## Azure Data Factory
 
+On how to provision Azure Data Factory please visit [this web page](https://docs.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory-portal).
+
+
 <a name="Cosmos"></a>
 ## Cosmos DB
 
