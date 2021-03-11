@@ -18,7 +18,7 @@ After you open Azure Portal under your account the following resourcese need to 
 
 
 ### Final overview of project services
-![Project Architecture overview](images/Services.png "Project Architecture") 
+![Project Architecture overview](images/SetUp/Services.png "Project Architecture") 
 
 >**Notice:** *Assuming you already have solid knowledge and understanding how to provision those services no detailed instructions and screen shoots will be provided on each step of creation. For more details if needed please visit Microsoft Docs pages.*
 
@@ -29,7 +29,7 @@ For details on how to create Azure Storage Account please visit [this web page](
 
 **Important**: After Azure Storage Account is provisioned, 3 containers must be created as shown on image below. All conatiners are type of Blob Storage and will be used as one of storage solution for the project.
 
-![storage account](images/SA4.png)
+![storage account](images/SetUp/SA4.png)
 
 
 <a name="ADLS"></a>
@@ -38,11 +38,11 @@ For details on how to create Azure Storage Account please visit [this web page](
 **Notice** : For details on how to create Data Lake Gen 2 Storage please visit [this web page](https://docs.microsoft.com/en-us/azure/storage/blobs/create-data-lake-storage-account).\
 *The only difference comparing to Azure Storage Account is in enabling Hierarchy Namespace.*
 
-![storage account](images/ADLS1.png)
+![storage account](images/SetUp/ADLS1.png)
 
 **Important**: Inside ADLS 3 (three) containers must be created as shown on image below. All conatiners are type of Blob Storage and will be used as one of storage solution for the project.
 
-![storage account](images/ADLS4.png)
+![storage account](images/SetUp/ADLS4.png)
 
 >### Important recomendation for both Storage Account and Azure Data Lake Storage
 >*It's recomended to use **Azure Storage Explorer** - an application which helps you to easily access the Azure storage account through any device on any platform, be it Windows, MacOS, or Linux. You can easily connect to your subscription and manipulate your tables, blobs, queues, and files.*
@@ -70,17 +70,17 @@ The process for storing Connection string for SQL database access is the same on
 As Azure Data Lake Storage and Azure Databricks are unarguably the backbones of the Azure cloud-based data analytics systems for purpose of secure mounting the storage to Databricks distributed file system (DBFS) it's decided to delegate the Identity and access management tasks to the Azure AD. This is sligthly different approach comparing to previously described steps for ADLS/Storage Account.\
 To access resources secured by an Azure AD tenant, a security principal must represent the entity that requires access. A security principal defines the access policy and permissions for a user or an application in the Azure AD tenant. Following steps are required:
 1. Register an Azure Application - Find and select Azure Active Directory on the Azure Portal home page. Select **App registrations** and click **+ New registration**
-![storage account](images/Sp1.png)
+![storage account](images/SetUp/Sp1.png)
 2. On the **Register an application** page, enter the name ADLSAccess and click **Register**
-![storage account](images/sp12.png)
+![storage account](images/SetUp/sp12.png)
 3. In the main screen, copy the Application (client) ID and the Directory (tenant) ID into notepad. Application ID refers to the app we just registered, and the Azure AD tenant our app is registered to is the Directory ID.
 4. Next, we need to generate an authentication key  to authenticate the app. Click on **Certificates and secrets**, and then click **+ New client secret**. On the Add a client secret blade, type a description, and expiry of one year, click Add when done. When you click on Add, the client secret (authentication key) will appear. We only have one opportunity to copy this key-value into notepad. It's  not possibble to retrieve it later.
-![storage account](images/sp4.png)
+![storage account](images/SetUp/sp4.png)
 5. Add application secret to the Azure Key Vault (App Id, Client ID and Client Secret)
-![storage account](images/sp5.png)
+![storage account](images/SetUp/sp5.png)
 6. Select **Properties**, copy the **Vault URI** and **Resource ID** to notepad; we will need them in the step when creating secret scope in Azure Databricks
 7. Assign ACL to registred app using service principal and Azure Storage Explorer. Open Azure Storage Explorer and navigate to ADLS storage container and right click and select Manage Access Control list and add service principal 
-![storage account](images/sp3.png)
+![storage account](images/SetUp/sp3.png)
 
 
 <a name="ADF"></a>
@@ -92,9 +92,9 @@ The important thing in seting up of ADF is to provide access to Key Vault so the
 1. Navigate to **Access policy** tab on left sidebar of Key Vault
 2. Click on **+ Add Access Policy**
 3. Fill the **Add Access Policy** required parameters and click on **Add**
-![storage account](images/adf1.png)
+![storage account](images/SetUp/adf1.png)
 4. After click on **Add** principal shoud apear on principal list 
-![storage account](images/adf2.png)
+![storage account](images/SetUp/adf2.png)
 
 *This will allow Azure Data Factory to access other services which have stored access credentials to service using Key Vault secrets. This is recomended aproach since there is no distribution of real credentials just pointers to the same for which service have to have allowed access.*
 
