@@ -1,0 +1,1 @@
+# Copy data from Azure Blob Storage (ABS) to Azure Data Lake Storage (ADLS)
