@@ -66,7 +66,7 @@ There are 3 activities in this initial phase of fetching data:
 \
 Execute pipeline activity is used to pass parameter values used in Copy Activity. All 4 parameter fields are referencing parameters from ForEach activity. The same pipeline will be executed as many times as ForEach activity contains parameters in itself.
 This way we reuse the patern and Copy activity to execute fetching all datasets from IMDB database and storing into Azure Blob Storage.
-\
+
 \
 ![storage account](images/HTTPToBlob/AdfHTTPBlob8.png)\
 
@@ -74,6 +74,6 @@ This way we reuse the patern and Copy activity to execute fetching all datasets 
 4. At the end of Copy Activity we log execution. On success we call Log Successful Activity and log the status into Azure Sql Database. The same is for Log Failed activity but the same is executed on Fail of Copy Activity.
 See [Log Successful]() or [Log Failed]() procedures and their definition.
 
-\
+
 \
 ![storage account](images/HTTPToBlob/AdfHTTPBlob10.png)\
