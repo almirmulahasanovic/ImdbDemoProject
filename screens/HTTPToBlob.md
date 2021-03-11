@@ -39,13 +39,25 @@ There are 3 activities in this initial phase of fetching data:
 * Pass parameters into **ForEach** activity and start executing pipeline containing **Copy Activity** to move files from HTTP to Blob storage
 
 **Lookup Activity**
-![storage account](images/HTTPToBlob/AdfHTTPBlob4.png)
+\
+\
+![storage account](images/HTTPToBlob/AdfHTTPBlob4.png)\
+\
 **Filter Activity**
-![storage account](images/HTTPToBlob/AdfHTTPBlob5.png)
+\
+\
+![storage account](images/HTTPToBlob/AdfHTTPBlob5.png)\
+\
 **ForeEach Activity**
-![storage account](images/HTTPToBlob/AdfHTTPBlob6.png)
+\
+\
+![storage account](images/HTTPToBlob/AdfHTTPBlob6.png)\
+\
 **Get Files from HTTP to Blob** paipeline
-![storage account](images/HTTPToBlob/AdfHTTPBlob7.png)
+\
+\
+![storage account](images/HTTPToBlob/AdfHTTPBlob7.png)\
+\
 Execute pipeline activity is used to pass parameter values used in Copy Activity. All 4 parameter fields are referencing parameters from ForEach activity. The same pipeline will be executed as many times as ForEach activity contains in itself.
 This way we reuse the patern and Copy activity to execute fetching all datasets from IMDB database and storing into Azure Blob Storage.
 ![storage account](images/HTTPToBlob/AdfHTTPBlob8.png)
