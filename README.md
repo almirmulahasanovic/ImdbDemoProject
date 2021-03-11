@@ -19,7 +19,7 @@ The project references IMDB Movie/TV datasets. You can get a subset of the IMDB 
 ## Project will show you how to:
 1. [Set-up environment](screens/setUp.md) 
 2. [Ingest data from HTTP service into Azure Blob Storage (ABS) with parametrized pipelines using Azure Data Factory (ADF)](screens/HTTPToBlob.md)
-3. [Copy data from Azure Blob Storage (ABS) to Azure Data Lake Storage (ADLS)]()
+3. [Copy data from Azure Blob Storage (ABS) to Azure Data Lake Storage (ADLS)](screens/BlobToADLS.md)
 4. [Copy data from Azure Data Lake Storage (ADLS) to Azure SQL Database]()
 5. [Create Databricks Notebooks for data transformation]()
 6. [Transform data using Databricks Notebook Activity in Azure Data Factory (ADF) and load into Azure Data Lake Storage (ADLS) and Azure SQL Database]()
