@@ -117,6 +117,7 @@ The most important aspect of function is to allow the access to Key vault so tha
 
 <a name="Cosmos"></a>
 ## Cosmos DB
+For provisioning Cosmos DB the most important thing is to set throuput units and partition key. Since only one dataset will be moved from Azure SQL Database for consisteny of material detaild explanation on how to provision Cosmos DB will be provided in section "Transform data using Data Flows in Azure Data Factory (ADF) and load from Azure SQL Database into CosmosDb" of this project.
 
 
 
