@@ -77,3 +77,11 @@ See [Log Successful]() or [Log Failed]() procedures and their definition.
 
 \
 ![storage account](images/HTTPToBlob/AdfHTTPBlob10.png)
+
+Finally, you can review log execution or even monitor execution this was using SSMS. In addition, execution Logger is shown both for Successful and Failed.
+
+\
+![storage account](images/HTTPToBlob/AdfHTTPBlob12.png)
+
+\
+![storage account](images/HTTPToBlob/AdfHTTPBlob13.png)
