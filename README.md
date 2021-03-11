@@ -33,7 +33,7 @@ The project references IMDB Movie/TV datasets. You can get a subset of the IMDB 
 
 
 
-![Project Architecture overview](img/Software%20Architecture.png "Project Architecture") 
+![Project Architecture overview](ProjectArchitecture/Software%20Architecture.png "Project Architecture") 
 
 ## My other projects
 1.  [**FIDAR** - ](screens/setUp.md) 
