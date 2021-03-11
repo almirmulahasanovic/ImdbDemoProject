@@ -80,8 +80,10 @@ See [Log Successful]() or [Log Failed]() procedures and their definition.
 
 Finally, you can review log execution or even monitor execution this was using SSMS. In addition, execution Logger is shown both for Successful and Failed.
 
+Successfuly Executed Activities
 \
 ![storage account](images/HTTPToBlob/AdfHTTPBlob12.png)
 
+Failed Executed Activities
 \
 ![storage account](images/HTTPToBlob/AdfHTTPBlob13.png)
