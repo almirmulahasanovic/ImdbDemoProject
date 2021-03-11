@@ -17,9 +17,9 @@ The project references IMDB Movie/TV datasets. You can get a subset of the IMDB 
 *   Azure subscription. If you don't have an Azure subscription, create a [free Azure account](https://azure.microsoft.com/en-us/free/) before you begin.
 
 ## Project will show you how to:
-1. [Set-up environment](screens/setUp.md) 
-2. [Ingest data from HTTP service into Azure Blob Storage (ABS) with parametrized pipelines using Azure Data Factory (ADF)](screens/HTTPToBlob.md)
-3. [Copy data from Azure Blob Storage (ABS) to Azure Data Lake Storage (ADLS)](screens/BlobToADLS.md)
+1. [Set-up environment](Sections/setUp.md) 
+2. [Ingest data from HTTP service into Azure Blob Storage (ABS) with parametrized pipelines using Azure Data Factory (ADF)](Sections/HTTPToBlob.md)
+3. [Copy data from Azure Blob Storage (ABS) to Azure Data Lake Storage (ADLS)](Sections/BlobToADLS.md)
 4. [Copy data from Azure Data Lake Storage (ADLS) to Azure SQL Database]()
 5. [Create Databricks Notebooks for data transformation]()
 6. [Transform data using Databricks Notebook Activity in Azure Data Factory (ADF) and load into Azure Data Lake Storage (ADLS) and Azure SQL Database]()
@@ -36,8 +36,8 @@ The project references IMDB Movie/TV datasets. You can get a subset of the IMDB 
 ![Project Architecture overview](ProjectArchitecture/Software%20Architecture.png "Project Architecture") 
 
 ## My other projects
-1.  [**FIDAR** - ](screens/setUp.md) 
- (**FI**nancial **D**ata, **A**nalysis and **R**eporting) is profitability calculator. It's developed following banking financial standards for calculating profitability on different levels (segments, products, customers, branches). Implements Fund Transfer Pricing for calculating internal pricing and net interest margin on single deal, product and segment level [(see more details)](screens/setUp.md)
+1.  [**FIDAR** - ](Sections/setUp.md) 
+ (**FI**nancial **D**ata, **A**nalysis and **R**eporting) is profitability calculator. It's developed following banking financial standards for calculating profitability on different levels (segments, products, customers, branches). Implements Fund Transfer Pricing for calculating internal pricing and net interest margin on single deal, product and segment level [(see more details)](Sections/setUp.md)
 
 
 
