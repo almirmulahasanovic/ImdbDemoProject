@@ -68,7 +68,7 @@ Execute pipeline activity is used to pass parameter values used in Copy Activity
 This way we reuse the patern and Copy activity to execute fetching all datasets from IMDB database and storing into Azure Blob Storage.
 
 \
-![storage account](images/HTTPToBlob/AdfHTTPBlob8.png)\
+![storage account](images/HTTPToBlob/AdfHTTPBlob8.png)
 
 
 4. At the end of Copy Activity we log execution. On success we call Log Successful Activity and log the status into Azure Sql Database. The same is for Log Failed activity but the same is executed on Fail of Copy Activity.
@@ -76,4 +76,4 @@ See [Log Successful]() or [Log Failed]() procedures and their definition.
 
 
 \
-![storage account](images/HTTPToBlob/AdfHTTPBlob10.png)\
+![storage account](images/HTTPToBlob/AdfHTTPBlob10.png)
