@@ -24,11 +24,17 @@ It's good aproach since for every new dataset need to be introduces in project t
 \
 ![storage account](images/HTTPToBlob/AdfHTTPBlob11.png)\
 \
-Now back to Datasets! In addition see images showing set up of dataset :\
+Now back to Datasets! In addition see images showing set up of dataset :
 * **HTTP Dataset**
+\
+\
 ![storage account](images/HTTPToBlob/AdfHTTPBlob2.png)
-* **Blob Storage Dataset**\
-![storage account](images/HTTPToBlob/AdfHTTPBlob3.png)
+\
+**Blob Storage Dataset**
+\
+\
+![storage account](images/HTTPToBlob/AdfHTTPBlob3.png)\
+\
 
 3. Create pipeline for geting parameter values and pass into Copy activity (HTTP - Blob)
 
