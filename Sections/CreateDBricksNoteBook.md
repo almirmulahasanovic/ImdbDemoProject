@@ -125,7 +125,7 @@ if any(mount.mountPoint == mountPoint for mount in dbutils.fs.mounts()):
   dbutils.fs.unmount(mountPoint)
   ```
 
-Also, another notebook added - transforming the file and saving in parquet format for further use. Since mount is the same as for previous example it will be sciped - only transformation is shown:
+Also, another notebook added - transforming the file and saving in parquet format for further use. Since mount is the same as for previous example it will be escaped - only transformation is shown:
 
 5. **Get data**
 ```
@@ -143,7 +143,7 @@ df_episode = df_episode.withColumn("seasonNumber", replace(col("seasonNumber"), 
 df_episode = df_episode.withColumn("episodeNumber", replace(col("episodeNumber"), "\\N"))
 
 ```
-7. Clear Null Values
+7. **Clear Null Values**
 ```
 # remove null values
 df_episode = df_episode.dropna()
@@ -151,7 +151,7 @@ print(df_episode.count())
 
 ```
 
-8. Save in ADLS in parquet format
+8. **Save to ADLS in parquet format**
 ```
 df_episode.write.mode("append").parquet("/mnt/parquet/episode")
 ```
