@@ -24,7 +24,7 @@ Also, Copy activity reflects set up of copy files from Blob to ADLS (Source and 
 ![storage account](images/BlobToADLS/BlobToADLS4.png)
 
 ## Next
-* [Copy data from Azure Blob Storage (ABS) to Azure Data Lake Storage (ADLS)](ADLSToSQL.md)
+* [Copy data from Azure Data Lake Storage (ADLS) to Azure SQL Database](ADLSToSQL.md)
 
 
 
