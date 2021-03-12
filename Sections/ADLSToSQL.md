@@ -21,4 +21,4 @@ Also, Copy activity reflects set up of copy files from Blob to ADLS (Source and 
 ![storage account](images/ADLSToSQL/AdlsToSQL2.png)
 
 ## Next
-* [Create Databricks Notebooks for data transformation](Sections/CreateDBricksNoteBook.md)
+* [Create Databricks Notebooks for data transformation](CreateDBricksNoteBook.md)

@@ -87,3 +87,7 @@ Successfuly Executed Activities
 Failed Executed Activities
 \
 ![storage account](images/HTTPToBlob/AdfHTTPBlob13.png)
+
+## Next
+
+* [Copy data from Azure Blob Storage (ABS) to Azure Data Lake Storage (ADLS)](BlobToADLS.md)

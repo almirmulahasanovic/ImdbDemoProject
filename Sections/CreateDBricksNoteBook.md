@@ -163,4 +163,4 @@ df_episode.write.mode("append").parquet("/mnt/parquet/episode")
 
 ## Next
 
-* [Transform data using Databricks Notebook Activity in Azure Data Factory (ADF) and load into Azure Data Lake Storage (ADLS) and Azure SQL Database](Sections/RunDBrickNbUsingADF.md)
+* [Transform data using Databricks Notebook Activity in Azure Data Factory (ADF) and load into Azure Data Lake Storage (ADLS) and Azure SQL Database](RunDBrickNbUsingADF.md)
