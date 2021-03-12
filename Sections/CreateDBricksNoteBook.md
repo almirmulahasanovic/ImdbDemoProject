@@ -12,7 +12,7 @@ In order to mount ADLS from Databricks :
 ![storage account](images/DBricksMount/DBricksMount1.png)
 
 
-2. Mount ADLS to Databricks using Secret Scope
+2. **Mount ADLS to Databricks using Secret Scope**
 ```
 #Connect to ADLS
 # Connection String Variables
@@ -51,7 +51,11 @@ if not any(mount.mountPoint == mountPoint for mount in dbutils.fs.mounts()):
 
 ```
 
-3. Do the transformation
+3. **Do the transformation**
+
+2 transformations are applied:
+* Joining 2 dataframes and splitting the column with array data type (loaded in SQL Database)
+* Clearing null values in dataframe and saving as parquet file
 
 ```
 
@@ -70,7 +74,7 @@ from pyspark.sql import SparkSession
 ```
 
 
-# Create dataframes from 2 tsv files
+# **Create dataframes from 2 tsv files**
 
 dfBasics = spark.read.csv("/mnt/csvFiles/Basics.csv", sep=r'\t', header=True).select('tconst','titleType','primaryTitle','originalTitle','isAdult','startYear','endYear','runtimeMinutes','genres')
 dfRatings = spark.read.csv("/mnt/csvFiles/Ratings.csv", sep=r'\t', header=True).select('tconst','averageRating','numVotes')
@@ -93,7 +97,6 @@ df4.show()
 
 ```
 
-
 ```
 
 userName = dbutils.secrets.get(scope="imdbprojectKeyVault",key="userName")
@@ -113,7 +116,7 @@ df4.withColumn('genres', concat_ws(',', 'genres')).write \
     .save()
 ```
 
-4. Unmount storage
+4. **Unmount storage**
 
 ```
 
@@ -121,3 +124,34 @@ df4.withColumn('genres', concat_ws(',', 'genres')).write \
 if any(mount.mountPoint == mountPoint for mount in dbutils.fs.mounts()):
   dbutils.fs.unmount(mountPoint)
   ```
+
+Also, another notebook added - transforming the file and saving in parquet format for further use. Since mount is the same as for previous example it will be sciped - only transformation is shown:
+
+5. **Get data**
+```
+df_episode = spark.read.csv("/mnt/csvFiles/Episode.csv", sep=r'\t', header=True)
+```
+6. **Transform the data**
+```
+from pyspark.sql.functions import *
+from pyspark.sql.functions import when, lit, col
+
+def replace(column, value):
+    return when(column != value, column).otherwise(lit(None))
+
+df_episode = df_episode.withColumn("seasonNumber", replace(col("seasonNumber"), "\\N"))
+df_episode = df_episode.withColumn("episodeNumber", replace(col("episodeNumber"), "\\N"))
+
+```
+7. Clear Null Values
+```
+# remove null values
+df_episode = df_episode.dropna()
+print(df_episode.count())
+
+```
+
+8. Save in ADLS in parquet format
+```
+df_episode.write.mode("append").parquet("/mnt/parquet/episode")
+```
