@@ -47,8 +47,77 @@ if not any(mount.mountPoint == mountPoint for mount in dbutils.fs.mounts()):
   dbutils.fs.mount(
     source = source,
     mount_point = mountPoint,
-    extra_configs = configs)```
+    extra_configs = configs)
+
+```
 
 3. Do the transformation
 
+```
+
+# reference import
+
+from pyspark.sql import SQLContext
+from pyspark.sql.functions import explode
+from pyspark.sql.types import *
+from pyspark.sql.functions import col, split, concat_ws
+from pyspark.sql import functions as sf
+from pyspark import SparkConf, SparkContext
+from pyspark.sql import SparkSession
+
+```
+
+```
+
+
+# Create dataframes from 2 tsv files
+
+dfBasics = spark.read.csv("/mnt/csvFiles/Basics.csv", sep=r'\t', header=True).select('tconst','titleType','primaryTitle','originalTitle','isAdult','startYear','endYear','runtimeMinutes','genres')
+dfRatings = spark.read.csv("/mnt/csvFiles/Ratings.csv", sep=r'\t', header=True).select('tconst','averageRating','numVotes')
+
+df = (dfBasics.alias('dfBasics').join(dfRatings.alias('dfRatings'),
+                               on = dfBasics['tconst'] == dfRatings['tconst'],
+                               how = 'inner')
+                         .select('dfBasics.*',
+                                 'dfRatings.averageRating')
+)
+
+
+# start transform
+df2 = df.withColumn("genres", split(col("genres"), ",").cast("array<string>"))
+
+# explosion in dataset - transform comma separated velues in columns in rows
+df3 = df2.withColumn("originalGenres",explode(df2.genres))
+df4 = df3.withColumn('webLocation', sf.concat(sf.lit('https://www.imdb.com/title'),sf.lit('/'), sf.col('tconst')))
+df4.show()
+
+```
+
+
+```
+
+userName = dbutils.secrets.get(scope="imdbprojectKeyVault",key="userName")
+passWord = dbutils.secrets.get(scope="imdbprojectKeyVault",key="passWord")
+jdbcUrl = dbutils.secrets.get(scope="imdbprojectKeyVault",key="jdbcUrl")
+
+# "jdbc:sqlserver://imdbdatabaseserver.database.windows.net:1433;database=IMdbDataBase"
+
+# return array in column data type 
+df4.withColumn('genres', concat_ws(',', 'genres')).write \
+    .format("jdbc") \
+    .mode("overwrite") \
+    .option("url", jdbcUrl ) \
+    .option("dbtable", "dbo.RatedMovies") \
+    .option("user", userName) \
+    .option("password", passWord) \
+    .save()
+```
+
 4. Unmount storage
+
+```
+
+# Unmount 
+if any(mount.mountPoint == mountPoint for mount in dbutils.fs.mounts()):
+  dbutils.fs.unmount(mountPoint)
+  ```
