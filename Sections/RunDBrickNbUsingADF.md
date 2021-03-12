@@ -19,5 +19,5 @@ It's not purpose to go in implementation details just to show how easy is to run
 
 ## Next
 
-* [Use Azure Function and C# for fetching and loading data into Azure Storage Acocunt from Azure SQL Database]()
+* [Use Azure Function and C# for fetching and loading data into Azure Storage Acocunt from Azure SQL Database](Sections/Function.md)
 
