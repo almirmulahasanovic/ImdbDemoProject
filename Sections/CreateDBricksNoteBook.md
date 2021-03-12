@@ -54,6 +54,8 @@ if not any(mount.mountPoint == mountPoint for mount in dbutils.fs.mounts()):
 
 3. **Do the transformation**
 
+**Notification** *Each grey section represents separate cell within Databricks Notebook*
+
 2 transformations are applied:
 * Joining 2 dataframes and splitting the column with array data type (loaded in SQL Database)
 * Clearing null values in dataframe and saving as parquet file
