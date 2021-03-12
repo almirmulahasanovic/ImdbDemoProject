@@ -37,7 +37,7 @@ The project references IMDB Movie/TV datasets. You can get a subset of the IMDB 
 
 ## My other projects
 1.  [**FIDAR** - ](https://github.com/almirmulahasanovic/FidarProject) 
- (**FI**nancial **D**ata, **A**nalysis and **R**eporting) is profitability calculator. It's developed following banking financial standards for calculating profitability on different levels (segments, products, customers, branches). Implements Fund Transfer Pricing for calculating internal pricing and net interest margin on single deal, product and segment level [(see more details)](https://github.com/almirmulahasanovic/FidarProject)
+ ((**FI**)nancial (**D**)ata, (**A**)nalysis and (**R**)eporting) is profitability calculator. It's developed following banking financial standards for calculating profitability on different levels (segments, products, customers, branches). Implements Fund Transfer Pricing for calculating internal pricing and net interest margin on single deal, product and segment level [(see more details)](https://github.com/almirmulahasanovic/FidarProject)
 
  ## About Me
 
