@@ -17,4 +17,7 @@ Here we only going to show how to set up pipeline in Azure Data Factory to run D
 
 It's not purpose to go in implementation details just to show how easy is to run Databricks Notebook using ADF in order to do transformation and loading data into different data storages. Of course those pipelines can be then scheduled for trigger execution but this is not in scope of the project so no details provided.
 
+## Next
+
+* [Use Azure Function and C# for fetching and loading data into Azure Storage Acocunt from Azure SQL Database]()
 

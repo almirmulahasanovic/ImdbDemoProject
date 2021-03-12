@@ -20,7 +20,7 @@ The project references IMDB Movie/TV datasets. You can get a subset of the IMDB 
 1. [Set-up environment](Sections/setUp.md) 
 2. [Ingest data from HTTP service into Azure Blob Storage (ABS) with parametrized pipelines using Azure Data Factory (ADF)](Sections/HTTPToBlob.md)
 3. [Copy data from Azure Blob Storage (ABS) to Azure Data Lake Storage (ADLS)](Sections/BlobToADLS.md)
-4. [Copy data from Azure Data Lake Storage (ADLS) to Azure SQL Database]()
+4. [Copy data from Azure Data Lake Storage (ADLS) to Azure SQL Database](Sections/ADLSToSQL.md)
 5. [Create Databricks Notebooks for data transformation](Sections/CreateDBricksNoteBook.md)
 6. [Transform data using Databricks Notebook Activity in Azure Data Factory (ADF) and load into Azure Data Lake Storage (ADLS) and Azure SQL Database](Sections/RunDBrickNbUsingADF.md)
 7. [Transform data using Data Flows in Azure Data Factory (ADF) and load from Azure SQL Database into CosmosDb](Sections/SQLToCosmos.md))
