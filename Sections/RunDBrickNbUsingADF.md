@@ -2,7 +2,7 @@
 
 Here we only going to show how to set up pipeline in Azure Data Factory to run Databricks Notebook.
 
-1.  Linked Service to DataBrisck must be created, as well as Dataset (we don't go into details)
+1.  Linked Service to Databricks must be created, as well as Dataset (we don't go into details)
 2.  Notebook Activity is selected and set up to run the Databricks Notebook as follows:
 
 \
@@ -15,6 +15,6 @@ Here we only going to show how to set up pipeline in Azure Data Factory to run D
 \
 ![storage account](images/RunDBrickNbUsingADF/RunDBrickNbUsingADF2.png)
 
-It's not purpose to go in implementation details just to show how easy is to run Databricks NOtebook using ADF in order to do transformation and loading data into different data storages.
+It's not purpose to go in implementation details just to show how easy is to run Databricks Notebook using ADF in order to do transformation and loading data into different data storages.
 
 

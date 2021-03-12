@@ -26,7 +26,7 @@ The project references IMDB Movie/TV datasets. You can get a subset of the IMDB 
 7. [Transform data using Data Flows in Azure Data Factory (ADF) and load from Azure SQL Database into CosmosDb]()
 8. [Use Azure Function and C# for fetching and loading data into Azure Storage Acocunt from Azure SQL Database]()
 
-*For implementation details just click on link from the list above*.\
+
 ***Important** : Purpose of links from list above  is not to describe step by step implementation but te provide general concept of implementation.*
 
 ## Project Architecture
