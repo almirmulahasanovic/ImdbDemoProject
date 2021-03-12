@@ -15,6 +15,6 @@ Here we only going to show how to set up pipeline in Azure Data Factory to run D
 \
 ![storage account](images/RunDBrickNbUsingADF/RunDBrickNbUsingADF2.png)
 
-It's not purpose to go in implementation details just to show how easy is to run Databricks Notebook using ADF in order to do transformation and loading data into different data storages.
+It's not purpose to go in implementation details just to show how easy is to run Databricks Notebook using ADF in order to do transformation and loading data into different data storages. Of course those pipelines can be then scheduled for trigger execution but this is not in scope of the project so no details provided.
 
 
