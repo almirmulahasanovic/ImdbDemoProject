@@ -20,7 +20,7 @@ The following image shows flow as previously defined:
 ![storage account](images/SQLToCosmos/SQLToCosmos1.png)
 
 
-2. As already mentioned, most important part of the structure is mid-transformation of data into Json structure.  Here you can see how it's transformed into ratedmovies{} hierarchy which is then mapped and passed into Cosmos DB
+2. As already mentioned, most important part of the flow is mid-transformation of data into Json structure.  Here you can see how it's mapped into ratedmovies{} hierarchy which is then mapped and passed into Cosmos DB.
 \
 \
 ![storage account](images/SQLToCosmos/SQLToCosmos3.png)
@@ -33,4 +33,3 @@ The following image show the mapping to CosmosDB based on transformed hierarchy:
 \
 \
 ![storage account](images/SQLToCosmos/SQLToCosmos5.png)
-\
