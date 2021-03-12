@@ -13,7 +13,7 @@ The following steps need to be done in Dataflow to make this data movement with 
 2.  Create transformation out of Source
 3.  Load into Cosmos DB (Sink - Cosmos DB)
 
-Th following image shows flow as previously defined:
+The following image shows flow as previously defined:
 
 \
 \

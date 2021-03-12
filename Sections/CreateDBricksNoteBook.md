@@ -11,6 +11,7 @@ In order to mount ADLS from Databricks :
 \
 ![storage account](images/DBricksMount/DBricksMount1.png)
 
+***Important**: We use Python programming language to manage this notebook*
 
 2. **Mount ADLS to Databricks using Secret Scope**
 ```
