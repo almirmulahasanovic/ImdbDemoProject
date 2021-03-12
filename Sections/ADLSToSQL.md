@@ -1,6 +1,6 @@
 # Copy data from Azure Data Lake Storage (ADLS) to Azure SQL Database
 
-The same principle is followed as described in section [Ingest data from HTTP service into Azure Blob Storage (ABS) with parametrized pipelines using Azure Data Factory (ADF)](Sections/HTTPToBlob.md).
+The same principle is applied as described in section [Ingest data from HTTP service into Azure Blob Storage (ABS) with parametrized pipelines using Azure Data Factory (ADF)](Sections/HTTPToBlob.md).
 
 There are  2 main diferences which have to be taken into consideration:
 1. Datasets and linkedservices are different then used in [linked article](Sections/HTTPToBlob.md)

@@ -1,6 +1,6 @@
 # Transform data using Databricks Notebook Activity in Azure Data Factory (ADF) and load into Azure Data Lake Storage (ADLS) and Azure SQL Database
 
-Here we only going to show how to set up pipeline in Azure Data Factory to run Databricks Notebook.
+Here we are only going to show how to set up pipeline in Azure Data Factory to run Databricks Notebook.
 
 1.  Linked Service to Databricks must be created, as well as Dataset (we don't go into details)
 2.  Notebook Activity is selected and set up to run the Databricks Notebook as follows:

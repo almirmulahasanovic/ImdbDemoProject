@@ -24,7 +24,7 @@ The project references IMDB Movie/TV datasets. You can get a subset of the IMDB 
 5. [Create Databricks Notebooks for data transformation](Sections/CreateDBricksNoteBook.md)
 6. [Transform data using Databricks Notebook Activity in Azure Data Factory (ADF) and load into Azure Data Lake Storage (ADLS) and Azure SQL Database](Sections/RunDBrickNbUsingADF.md)
 7. [Transform data using Data Flows in Azure Data Factory (ADF) and load from Azure SQL Database into CosmosDb](Sections/SQLToCosmos.md))
-8. [Use Azure Function and C# for fetching and loading data into Azure Storage Acocunt from Azure SQL Database]()
+8. [Use Azure Function and C# for fetching and loading data into Azure Storage Acocunt from Azure SQL Database](Sections/Function.md)
 
 
 ***Important** : Purpose of links from list above  is not to describe step by step implementation but te provide general concept of implementation.*
@@ -38,6 +38,10 @@ The project references IMDB Movie/TV datasets. You can get a subset of the IMDB 
 ## My other projects
 1.  [**FIDAR** - ](Sections/setUp.md) 
  (**FI**nancial **D**ata, **A**nalysis and **R**eporting) is profitability calculator. It's developed following banking financial standards for calculating profitability on different levels (segments, products, customers, branches). Implements Fund Transfer Pricing for calculating internal pricing and net interest margin on single deal, product and segment level [(see more details)](setUp.md)
+
+ ## About Me
+
+Interested in find out more about me? [Just click here and see my curriculum vitae]().
 
 
 

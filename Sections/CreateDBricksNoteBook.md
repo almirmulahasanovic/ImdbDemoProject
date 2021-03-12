@@ -5,7 +5,7 @@ To see more details about how to create this please see [this section]().
 
 In order to mount ADLS from Databricks :
 1. Create an Azure Key Vault-backed Secret Scope in Azure Databricks
-* Go to Databricks url and add #secrets/createScope at the end (new user form is open). Populate user form as folows:
+* Go to Databricks url and add **#secrets/createScope** at the end (new user form is open). Populate user form as folows:
 
 \
 \
