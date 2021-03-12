@@ -23,7 +23,7 @@ The project references IMDB Movie/TV datasets. You can get a subset of the IMDB 
 4. [Copy data from Azure Data Lake Storage (ADLS) to Azure SQL Database]()
 5. [Create Databricks Notebooks for data transformation](Sections/CreateDBricksNoteBook.md)
 6. [Transform data using Databricks Notebook Activity in Azure Data Factory (ADF) and load into Azure Data Lake Storage (ADLS) and Azure SQL Database](Sections/RunDBrickNbUsingADF.md)
-7. [Transform data using Data Flows in Azure Data Factory (ADF) and load from Azure SQL Database into CosmosDb]()
+7. [Transform data using Data Flows in Azure Data Factory (ADF) and load from Azure SQL Database into CosmosDb](Sections/SQLToCosmos.md))
 8. [Use Azure Function and C# for fetching and loading data into Azure Storage Acocunt from Azure SQL Database]()
 
 
