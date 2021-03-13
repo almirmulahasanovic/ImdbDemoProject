@@ -41,7 +41,7 @@ The project references IMDB Movie/TV datasets. You can get a subset of the IMDB 
 
  ## About Me
 
-Interested in find out more about me and my previous experience? [Just click here and see my curriculum vitae]().
+Interested in find out more about me and my previous experience? [Just click here and see my curriculum vitae](https://github.com/almirmulahasanovic/myCV/blob/main/CV_AlmirMulahasanovic.pdf).
 
 
 
